@@ -1,6 +1,7 @@
-# React + Vite
+# 1° Proyecto con React - Citas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Primer proyecto de practica del curso React - La Guia Completa.
+Comenzamos armando la estructura base del proyecto con Vite.
 
 Currently, two official plugins are available:
 
