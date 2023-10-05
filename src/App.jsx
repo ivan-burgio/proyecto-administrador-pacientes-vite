@@ -2,14 +2,12 @@ import Formulario from "./components/Formulario"
 import Header from "./components/Header"
 import ListadoPacientes from "./components/ListadoPacientes"
 
-function App() {
+export default function App() {
   return (
     <>
-      <Header />
-      <Formulario />
-      <ListadoPacientes />
+      <Header/>
+      <Formulario/>
+      <ListadoPacientes/>
     </>
   )
 }
-
-export default App
