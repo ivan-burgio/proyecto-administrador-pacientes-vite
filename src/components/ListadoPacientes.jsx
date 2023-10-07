@@ -14,6 +14,7 @@ export default function ListadoPacientes() {
             <Paciente />
             <Paciente />
             <Paciente />
+            <Paciente />
 
         </div>
     )
