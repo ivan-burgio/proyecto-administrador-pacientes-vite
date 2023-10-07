@@ -1,7 +1,8 @@
 # 1° Proyecto con React - Citas
 
 Primer proyecto de practica del curso React - La Guia Completa.
-Comenzamos armando la estructura base del proyecto con Vite.
+La estructura base del proyecto se hizo con Vite.
+Para los estilos se hace uso de TailwindCSS.
 
 Currently, two official plugins are available:
 
