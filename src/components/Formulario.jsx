@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
+import Error from './Error';
 
-export default function Formulario() {
+export default function Formulario({pacientes, setPacientes}) {
     const [nombre, setNombre] = useState('');
     const [propietario, setPropietario] = useState('');
     const [email, setEmail] = useState('');
@@ -20,6 +21,24 @@ export default function Formulario() {
         }
 
         setError(false);
+
+        // Objeto con los datos del paciente
+        const objetoPaciente = {
+            nombre,
+            propietario,
+            email,
+            fecha,
+            sintomas
+        }
+
+        setPacientes([...pacientes, objetoPaciente]);
+
+        // Reiniciar el formularia
+        setNombre('');
+        setPropietario('');
+        setEmail('');
+        setFecha('');
+        setSintomas('');
     }
 
     return (
@@ -34,11 +53,7 @@ export default function Formulario() {
                 onSubmit={handleSubmit}
                 className="bg-white shadow-md rounded-lg py-10 px-5 mb-10"
             >
-                {error &&
-                    <div className='bg-red-800 text-white text-center p-3 uppercase font-bold mb-3 rounded-xl'>
-                        <p>Llene todos los campos</p>
-                    </div>
-                }
+                {error && <Error><p>Llene todos los campos</p></Error>}
 
                 <div className="mb-5">
                     <label htmlFor="mascota" className="block text-gray-700 uppercase font-bold">Nombre Mascota</label>
