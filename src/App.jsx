@@ -2,10 +2,10 @@ import { useState } from "react"
 import Formulario from "./components/Formulario"
 import Header from "./components/Header"
 import ListadoPacientes from "./components/ListadoPacientes"
-import paciente from "./components/Paciente";
 
 export default function App() {
     const [pacientes, setPacientes] = useState([]);
+    const [paciente, setPaciente] = useState({});
 
     return (
         <div className="container mx-auto mt-10">
@@ -14,9 +14,11 @@ export default function App() {
                 <Formulario 
                     pacientes = {pacientes}
                     setPacientes = {setPacientes}
+                    paciente = {paciente}
                 />
                 <ListadoPacientes
                     pacientes = {pacientes}
+                    setPaciente = {setPaciente}
                 />
             </div>
         </div>
