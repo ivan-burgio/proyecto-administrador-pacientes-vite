@@ -3,7 +3,7 @@ import Paciente from "./Paciente"
 export default function ListadoPacientes({pacientes, setPaciente}) {
 
     return (
-        <div className="md:w-1/2 lg:3/5 md:h-screen overflow-y-scroll">
+        <div className="md:w-1/2 lg:3/5 h-screen overflow-y-scroll">
 
             {pacientes && pacientes.length ? (
                 <>
