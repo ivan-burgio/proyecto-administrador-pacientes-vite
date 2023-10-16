@@ -1,6 +1,6 @@
 import Paciente from "./Paciente"
 
-export default function ListadoPacientes({pacientes, setPaciente}) {
+export default function ListadoPacientes({pacientes, setPaciente, eliminarPaciente}) {
 
     return (
         <div className="md:w-1/2 lg:3/5 h-screen overflow-y-scroll">
@@ -18,6 +18,7 @@ export default function ListadoPacientes({pacientes, setPaciente}) {
                             key = {paciente.id}
                             paciente = {paciente}
                             setPaciente = {setPaciente}
+                            eliminarPaciente = {eliminarPaciente}
                         />
                     ))}
                 </>
